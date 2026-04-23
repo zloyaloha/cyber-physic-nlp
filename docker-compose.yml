@@ -1,0 +1,9 @@
+services:
+  llm-service:
+    build: .
+    ports:
+      - "8000:8000"
+      - "11434:11434"
+    environment:
+      - OLLAMA_HOST=0.0.0.0
+    tty: true
